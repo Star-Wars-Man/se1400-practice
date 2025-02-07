@@ -5,3 +5,46 @@ body{
     margin: 0;
     padding: 20px;
 }
+
+header{
+    background-color: #003058;
+    color: #FFFFFF;
+    font-family: sans-serif;
+}
+
+header h1{
+    line-height: 140%;
+    padding: .5rem;
+}
+
+nav{
+    font-weight: bold;
+    background-color: #F3F3F3;
+}
+
+h2{
+    font-weight: bold;
+    color: #003058;
+}
+
+dt{
+    font-weight: bold;
+    color: #003058;
+}
+
+.ut{
+    font-weight: bold;
+    color: #BA1C21;
+}
+
+footer{
+    font-style: italic;
+    font-size: .70rem;
+    text-align: center;
+}
+
+#wrapper{
+    width: 80%;
+    margin-right: auto;
+    margin-left: auto;
+}
