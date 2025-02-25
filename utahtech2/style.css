@@ -32,7 +32,7 @@ dt{
     color: #003058;
 }
 
-p span{
+#ut{
     font-weight: bold;
     color: #BA1C21;
 }
@@ -44,7 +44,13 @@ footer{
 }
 
 #wrapper{
-    width: 80%;
+    max-width: 800px;
     margin-right: auto;
     margin-left: auto;
+}
+
+#main_img{
+    width: 800px;
+    height: 200px;
+    overflow: hidden;
 }
