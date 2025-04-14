@@ -1,26 +1,27 @@
-body{
+body {
     background-color: #FFFFFF;
-    background-image: linear-gradient(#eeeeee , #ffffff);
+    background-image: linear-gradient(#eeeeee, #ffffff);
     color: #666666;
     font-family: Verdana, Arial, sans-serif;
     margin: 0;
     padding: 20px;
 }
 
-header{
+header {
     margin: 0;
     background-color: #003058;
     color: #FFFFFF;
     font-family: sans-serif;
 }
 
-header h1{
+header h1 {
     margin: 0;
-    line-height: 140%;margin: 0;
+    line-height: 140%;
+    margin: 0;
     padding: .5rem;
 }
 
-nav{
+nav {
     font-weight: bold;
     text-decoration: none;
     background-color: #F3F3F3;
@@ -30,46 +31,206 @@ nav{
     padding-bottom: .5rem;
 }
 
-h2{
+h2 {
     font-weight: bold;
     color: #003058;
 }
 
-h3{
+h3 {
     color: #003058;
 }
 
-dt{
+table {
+    margin: 0 auto;
+    border-width: 1px;
+    border-color: #424242;
+    width: 100%;
+    border-collapse: collapse;
+}
+
+th,
+td {
+    padding: 5px;
+    border-width: 1px;
+    border-color: #424242;
+}
+
+td {
+    text-align: center;
+}
+
+dt {
     font-weight: bold;
     color: #003058;
 }
 
-#ut{
+#ut {
     font-weight: bold;
     color: #BA1C21;
 }
 
-footer{
+form {
+
+    display: grid;
+
+    grid-template-rows: auto;
+
+    grid-template-columns: 200px 1fr;
+
+    grid-gap: .75rem;
+
+    width: 100%;
+
+}
+
+
+
+input,
+textarea {
+
+    font-size: 1rem;
+
+    padding: 10px;
+
+    color: #666666;
+
+    background-color: #fafafa;
+
+    border: none;
+
+}
+
+
+
+input:focus,
+textarea:focus {
+
+    outline: none;
+
+    background-color: #f0f0f0;
+
+}
+
+
+
+footer {
+
     padding: 1rem;
+
     font-style: italic;
+
     font-size: .70rem;
+
     text-align: center;
+
 }
 
-#wrapper{
+
+
+#wrapper {
+
     background-color: #FFFFFF;
+
     max-width: 800px;
+
     margin-right: auto;
+
     margin-left: auto;
-    box-shadow: 0px 3px 3px rgba(66,66,66,0.3);
+
+    box-shadow: 0px 3px 3px rgba(66, 66, 66, 0.3);
+
 }
 
-main{
+
+
+main {
+
     padding: 20px;
+
 }
 
-#main_img{
+
+
+#main_img {
+
     width: 800px;
+
     height: 200px;
+
     overflow: hidden;
+
+}
+
+
+
+label {
+
+    padding: 10px;
+
+    text-align: right;
+
+}
+
+
+
+#mySubmit {
+
+    width: 10rem;
+
+    grid-column: 2 / 3;
+
+}
+
+
+
+#alumnihero {
+
+    background-image: url("alumnihero.jpg");
+
+    background-size: cover;
+
+    background-position: center;
+
+    background-repeat: no-repeat;
+
+}
+
+
+
+@media (max-width: 768px) {
+
+    #alumnihero {
+
+        background-size: contain;
+
+    }
+
+}
+
+
+
+@media (max-width: 480px) {
+
+    #alumnihero {
+
+        background-size: cover;
+
+        height: auto;
+
+    }
+
+}
+
+
+
+@media (min-width: 769px) {
+
+    #alumnihero {
+
+        background-size: cover;
+
+        height: 100vh;
+
+    }
+
 }
