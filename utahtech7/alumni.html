@@ -22,16 +22,18 @@
                 <h2>Join Alumni Mailing List</h2>
                 <h3>Request Alumni Newsletter</h3>
                 <form action="https://kearl.net/se1400/mail.php" method="POST">
-                    <label for="myFName">First Name:</label>
+                    <label for="myFName">* First Name:</label>
                     <input type="text" name="myFName" id="myFName" required>
-                    <label for="myLName">Last Name:</label>
+                    <label for="myLName">* Last Name:</label>
                     <input type="text" name="myLName" id="myLName" required>
-                    <label for="myEmail">Email:</label>
+                    <label for="myEmail">* Email:</label>
                     <input type="email" name="myEmail" id="myEmail" required>
                     <label for="myPhone">Phone:</label>
-                    <input type="tel" name="myPhone" id="myPhone" required>
-                    <label for="myComments">Comments:</label>
-                    <textarea id="myComments" name="myComments" rows="2" cols="20" placeholder="Enter your message"></textarea>
+                    <input type="tel" name="myPhone" id="myPhone">
+                    <label for="myGraduation">Graduation Date:</label>
+                    <input type="date" name="myGraduation" id="myGraduation">
+                    <label for="myComments">* Comments:</label>
+                    <textarea id="myComments" name="myComments" rows="2" cols="20" required></textarea>
                     <input type="submit" id="mySubmit" value="Submit">
                 </form>
                 

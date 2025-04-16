@@ -24,11 +24,17 @@ header h1 {
 nav {
     font-weight: bold;
     text-decoration: none;
-    background-color: #F3F3F3;
+    background-color: #424242;
     padding-left: 2rem;
     padding-right: .5rem;
     padding-top: .5rem;
     padding-bottom: .5rem;
+}
+
+nav a {
+    color: #FFFFFF;
+    text-decoration: none;
+    padding: 0.5rem;
 }
 
 h2 {
