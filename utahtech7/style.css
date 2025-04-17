@@ -59,6 +59,7 @@ td {
     padding: 5px;
     border-width: 1px;
     border-color: #424242;
+    border-style: solid;
 }
 
 td {
@@ -73,6 +74,10 @@ dt {
 #ut {
     font-weight: bold;
     color: #BA1C21;
+}
+
+tr:nth-of-type(odd) {
+    background-color: #F3F3F3;
 }
 
 form {
