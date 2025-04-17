@@ -21,6 +21,18 @@ header h1 {
     padding: .5rem;
 }
 
+#bluebar {
+    background-color: #003058;
+    grid-row: 1 / 2;
+    grid-column: 1 / -1;
+}
+
+#greybar {
+    background-color: #424242;
+    grid-row: 2 / 3;
+    grid-column: 1 / -1;
+}
+
 nav {
     font-weight: bold;
     text-decoration: none;
@@ -54,8 +66,7 @@ table {
     border-collapse: collapse;
 }
 
-th,
-td {
+th, td {
     padding: 5px;
     border-width: 1px;
     border-color: #424242;
@@ -81,167 +92,103 @@ tr:nth-of-type(odd) {
 }
 
 form {
-
     display: grid;
-
     grid-template-rows: auto;
-
     grid-template-columns: 200px 1fr;
-
     grid-gap: .75rem;
-
     width: 100%;
-
 }
 
-
-
-input,
-textarea {
-
+input, textarea {
     font-size: 1rem;
-
     padding: 10px;
-
     color: #666666;
-
     background-color: #fafafa;
-
     border: none;
-
 }
 
-
-
-input:focus,
-textarea:focus {
-
+input:focus, textarea:focus {
     outline: none;
-
     background-color: #f0f0f0;
-
 }
-
-
 
 footer {
-
     padding: 1rem;
-
     font-style: italic;
-
     font-size: .70rem;
-
     text-align: center;
-
 }
-
-
 
 #wrapper {
-
     background-color: #FFFFFF;
-
     max-width: 800px;
-
     margin-right: auto;
-
     margin-left: auto;
-
     box-shadow: 0px 3px 3px rgba(66, 66, 66, 0.3);
-
 }
-
-
 
 main {
-
     padding: 20px;
-
 }
-
-
 
 #main_img {
-
     width: 800px;
-
     height: 200px;
-
+    max-width: 100%;
     overflow: hidden;
-
 }
 
-
+img{
+    max-width: 100%;
+}
 
 label {
-
     padding: 10px;
-
     text-align: right;
-
 }
-
-
 
 #mySubmit {
-
     width: 10rem;
-
     grid-column: 2 / 3;
-
 }
-
-
 
 #alumnihero {
-
     background-image: url("alumnihero.jpg");
-
     background-size: cover;
-
     background-position: center;
-
     background-repeat: no-repeat;
-
+    grid-row: 3 / 4;
 }
 
-
-
-@media (max-width: 768px) {
-
-    #alumnihero {
-
-        background-size: contain;
-
+@media (max-width: 1100px) {
+    #wrapper {
+        grid-template-columns: minmax(0, 150px);
     }
-
 }
 
-
-
-@media (max-width: 480px) {
-
-    #alumnihero {
-
-        background-size: cover;
-
-        height: auto;
-
+@media (max-width: 900px) {
+    nav {
+        grid-row: 2 / 3;
+        grid-column: 5 / 8;
     }
-
+    #homehero, #studenthero, #facultyhero, #alumnihero {
+        grid-row: 2 / 3;
+        grid-column: 1 / 5;
+    }
 }
 
-
-
-@media (min-width: 769px) {
-
-    #alumnihero {
-
-        background-size: cover;
-
-        height: 100vh;
-
+@media (max-width: 600px) {
+    header h1 {
+        background-image: none;
+        text-align: center;
     }
 
+    nav {
+        grid-row: 2 / 3;
+        grid-column: 1 / -1;
+    }
+
+    #homehero, #studenthero, #facultyhero, #alumnihero {
+        display: none;
+    }
 }
