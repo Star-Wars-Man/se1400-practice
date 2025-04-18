@@ -1,0 +1,27 @@
+:root {
+    --animate-duration: 1s;
+}
+
+html, body {
+    height: 100%;
+    margin: 0;
+}
+
+body {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-template-rows: repeat(3, 1fr);
+}
+
+input {
+    grid-column: 2 / 3;
+    grid-row: 2 / 3;
+    justify-self: center;
+    align-self: center;
+}
+
+.animate__hinge {
+    animation-duration: calc(var(--animate-duration) * 2);
+    animation-name: hinge;
+    transform-origin: top left;
+}

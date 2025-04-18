@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Animation</title>
+    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"/>
+</head>
+<body>
+    <input type="button" id="myButton" value="Click Me">
+
+    <script>
+      const button = document.getElementById('myButton');
+
+      button.onclick = () => {
+        button.classList.remove('animate__animated', 'animate__hinge');
+        void button.offsetWidth; // Force reflow to restart animation
+        button.classList.add('animate__animated', 'animate__hinge');
+      };
+    </script>
+</body>
+</html>
