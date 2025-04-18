@@ -1,4 +1,5 @@
 body {
+    display: grid;
     background-color: #FFFFFF;
     background-image: linear-gradient(#eeeeee, #ffffff);
     color: #666666;
@@ -8,6 +9,8 @@ body {
 }
 
 header {
+    grid-row: 1/2;
+    grid-column: 1 / 9;
     margin: 0;
     background-color: #003058;
     color: #FFFFFF;
@@ -34,6 +37,10 @@ header h1 {
 }
 
 nav {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    grid-row: 2 / 3;
+    grid-column: 1 / 9;
     font-weight: bold;
     text-decoration: none;
     background-color: #424242;
@@ -41,6 +48,10 @@ nav {
     padding-right: .5rem;
     padding-top: .5rem;
     padding-bottom: .5rem;
+}
+
+#nav_item {
+    text-align: center;
 }
 
 nav a {
@@ -113,14 +124,28 @@ input:focus, textarea:focus {
 }
 
 footer {
+    grid-row: 5 / 6;
+    grid-column: 1 / 9;
     padding: 1rem;
     font-style: italic;
     font-size: .70rem;
     text-align: center;
 }
 
+div {
+    display: grid;
+}
+
+#image_wrapper {
+    display: grid;
+    grid-row: 3 / 4;
+    grid-column: 1 / 9;
+}
+
 #wrapper {
+    display: grid;
     background-color: #FFFFFF;
+    grid-template-columns: minmax(0, 800px);
     max-width: 800px;
     margin-right: auto;
     margin-left: auto;
@@ -128,6 +153,8 @@ footer {
 }
 
 main {
+    grid-row: 4 / 5;
+    grid-column: 1 / 9;
     padding: 20px;
 }
 
@@ -162,18 +189,20 @@ label {
 
 @media (max-width: 1100px) {
     #wrapper {
-        grid-template-columns: minmax(0, 150px);
+        grid-template-columns: minmax(0, 800px);
     }
 }
 
 @media (max-width: 900px) {
     nav {
-        grid-row: 2 / 3;
-        grid-column: 5 / 8;
-    }
-    #homehero, #studenthero, #facultyhero, #alumnihero {
+        grid-template-rows: repeat(4, 1fr);
+        grid-template-columns: 1fr;
         grid-row: 2 / 3;
         grid-column: 1 / 5;
+    }
+    #image_wrapper {
+        grid-row: 2 / 3;
+        grid-column: 5 / 9;
     }
 }
 
@@ -185,10 +214,10 @@ label {
 
     nav {
         grid-row: 2 / 3;
-        grid-column: 1 / -1;
+        grid-column: 1 / 9;
     }
 
-    #homehero, #studenthero, #facultyhero, #alumnihero {
+    #image_wrapper {
         display: none;
     }
 }
